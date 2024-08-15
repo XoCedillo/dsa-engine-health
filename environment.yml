@@ -17,6 +17,8 @@ dependencies:
   - numpy
   - pandas
   - scikit-learn
+  - dvc
+  - dvc-s3
   - pip:
     - python-dotenv
     - awscli

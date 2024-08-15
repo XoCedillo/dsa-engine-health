@@ -1,0 +1,3 @@
+['remote "myremote"']
+    url = s3://engine-health/data
+    profile = xo-playground

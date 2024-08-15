@@ -5,6 +5,7 @@
 PROJECT_NAME = dsa-engine-health
 PYTHON_VERSION = 3.10
 PYTHON_INTERPRETER = python
+AWS_PROFILE = xo-playground
 
 #################################################################################
 # COMMANDS                                                                      #
@@ -41,15 +42,15 @@ format:
 ## Download Data from storage system
 .PHONY: sync_data_down
 sync_data_down:
-	aws s3 sync s3://engine_data/data/ \
-		data/ 
+	aws s3 sync s3://engine-health/data/ \
+		data/ --profile $(AWS_PROFILE)
 	
 
 ## Upload Data to storage system
 .PHONY: sync_data_up
 sync_data_up:
 	aws s3 sync data/ \
-		s3://engine_data/data 
+		s3://engine-health/data  --profile $(AWS_PROFILE)
 	
 
 

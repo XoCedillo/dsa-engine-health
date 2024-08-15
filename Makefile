@@ -42,15 +42,13 @@ format:
 ## Download Data from storage system
 .PHONY: sync_data_down
 sync_data_down:
-	aws s3 sync s3://engine-health/data/ \
-		data/ --profile $(AWS_PROFILE)
+	dvc pull
 	
 
 ## Upload Data to storage system
 .PHONY: sync_data_up
 sync_data_up:
-	aws s3 sync data/ \
-		s3://engine-health/data  --profile $(AWS_PROFILE)
+	dvc up
 	
 
 

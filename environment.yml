@@ -1,26 +1,25 @@
 name: dsa-engine-health
 channels:
   - conda-forge
+  - defaults
 dependencies:
-  - python=3.10
   - black
   - flake8
-  - isort
-  - pip
-  - typer
-  - loguru
-  - tqdm
   - ipython
+  - isort
   - jupyterlab
+  - loguru
   - matplotlib
   - notebook
   - numpy
   - pandas
+  - pip
+  - python=3.10
   - scikit-learn
-  - dvc
+  - tqdm
+  - typer
+  - mamba
   - dvc-s3
-  - pip:
-    - python-dotenv
-    - awscli
-    - mkdocs
-    - -e .
+  - ca-certificates
+  - certifi
+  - openssl

@@ -1,3 +1,5 @@
-['remote "myremote"']
+[core]
+    remote = engine-health-dvc
+['remote "engine-health-dvc"']
     url = s3://engine-health/data
     profile = xo-playground

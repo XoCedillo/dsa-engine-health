@@ -6,6 +6,57 @@
 
 ML project to predict the health of engines
 
+
+# Step-by-Step Guide to Setup
+
+## 1. Install Conda
+If you haven't already installed Conda, you can download and install Miniconda (a minimal Conda installer) or Anaconda (which includes more packages by default):
+
+- **Miniconda (Recommended for most users):**
+  
+  Download Miniconda from the official website: [Miniconda Installation](https://docs.conda.io/en/latest/miniconda.html).
+
+  Follow the installation instructions for your operating system.
+
+- **Anaconda:**
+  
+  Download Anaconda from the official website: [Anaconda Installation](https://www.anaconda.com/products/individual).
+
+  Follow the installation instructions for your operating system.
+
+Now you have Conda installed and ready to use. You can create environments, install packages, and manage your Python projects efficiently.
+
+
+
+## 2. Create a New Conda Environment
+Once Conda is installed, you can create a Conda environment specifically for this project. This helps isolate project dependencies from other projects on your system:
+
+- **Create the Environment:**
+
+   This will create the environment using `environment.yml` file:
+   ```bash
+   make create_environment     
+   ```
+
+
+- **Activate the Environment:**
+
+   Activate the newly created environment:
+   ```bash
+   conda activate dsa-engine-health
+   ```
+
+Now, your terminal prompt should indicate that you are working within the `dsa-engine-health` environment.
+
+
+## 3. Install Packages
+Now that your environment is active, you can start installing packages required for your project.  All you need to do is update the contents of your `environment.yml` file accordingly and then run the following command:
+
+```bash
+make requirements
+```
+
+
 ## Project Organization
 
 ```

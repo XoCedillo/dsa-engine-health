@@ -18,7 +18,7 @@ jobs:
           miniforge-version: latest
           activate-environment: github-actions
           environment-file: .github/workflows/envs/github-actions.yml
-          # python-version: 3.10 # Match this with your environment.yml
+          # python-version: 3.11 # Match this with your environment.yml
           # activate-environment: dsa-engine-health
           # environment-file: ./environment.yml
 

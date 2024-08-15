@@ -3,7 +3,7 @@
 #################################################################################
 
 PROJECT_NAME = dsa-engine-health
-PYTHON_VERSION = 3.10
+PYTHON_VERSION = 3.11
 PYTHON_INTERPRETER = python
 AWS_PROFILE = xo-playground
 

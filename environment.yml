@@ -1,6 +1,7 @@
 name: dsa-engine-health
 channels:
   - conda-forge
+  - default
 dependencies:
   - black
   - flake8
@@ -18,7 +19,13 @@ dependencies:
   - tqdm
   - typer
   - mamba
+  - mlflow
+  - ydata-profiling
+  - scikit-learn
+  - yellowbrick
   - dvc-s3
   - ca-certificates
+  - plotly
+  - xgboost
   - certifi
   - openssl
